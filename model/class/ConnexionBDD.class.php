@@ -61,7 +61,7 @@
 
         public function selectAll($table)
         {
-            $reponse=$this->query('SELECT * FROM '.$table);
+            $reponse=$this->createBdd()->query('SELECT * FROM '.$table);
             return  $reponse->fetchAll();
         }
 
@@ -100,6 +100,7 @@
                     $sql = 'INSERT INTO '.$table.'('.$att.') VALUES('.$point.')';
                     $req = $this->createBDD()->prepare($sql);
                     $req->execute($column);
+                    $req->closeCursor();
                     return true;
 
                 }else {
@@ -133,6 +134,7 @@
                     $sql = 'DELETE FROM '.$table.' WHERE '.$point;
                     $req = $this->createBDD()->prepare($sql);
                     $req->execute($column);
+                    $req->closeCursor();
                     return true;
             }
 
@@ -175,6 +177,7 @@
             foreach ($reponse->fetchAll() as $r) {
                 $rep = array_merge($rep,array($r['Field']));
             }
+            $reponse->closeCursor();
             return $rep ;
         }
 
