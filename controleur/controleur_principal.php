@@ -16,6 +16,7 @@
 
     function media()
     {
+        include 'model/model_show_media.php';
         $GLOBALS['u']->add("view/view_principal/media.php",1);
     }
 
@@ -26,5 +27,5 @@
 
     function pageUnknown()
     {
-        $GLOBALS['u']->add("view/view_principal/page404.php",1);
+        $GLOBALS['u']->add("view/view_error/page404.php",1);
     }

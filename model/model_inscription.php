@@ -11,7 +11,7 @@
     ));
 
 
-    $email = $req->fetch(); //Si aucun utilisateur existe fetch() renverra false
+    $email = $req; //Si aucun utilisateur existe $req sera égal à false
     $req->closeCursor();
 
     if(!$email)

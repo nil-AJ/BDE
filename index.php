@@ -1,6 +1,6 @@
 <?php
 //Routeur 
-
+session_start();
 include('controleur/controleur_principal.php');
 include('controleur/controleur_association.php');
 include('controleur/controleur_administration.php');
@@ -40,11 +40,18 @@ include('controleur/controleur_administration.php');
                 case 'inscription':
                     inscription();
                     break;
+                
+                case 'connexion':
+                    connexion();
+                    break;
 
+                case 'deconnexion':
+                    deconnexion();
+                    break;
+                
                 case 'upload':
                     uploadMember();
                     break;
-                
                 
                 default:
                     throw new Exception(404);
@@ -69,7 +76,7 @@ include('controleur/controleur_administration.php');
                 break;
             
             default:
-                echo $e->getMessage(); //Erreur générique
+                echo 'Erreur test: '.$e->getMessage(); //Erreur générique
                 break;
         }
 
