@@ -14,6 +14,7 @@
         <link href="public/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link href="public/lib/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" >
+        <?php include 'public/css/membre_style.css';?>
     </head>
     <body>
         <nav>
@@ -52,15 +53,15 @@
                             <li class="navbar-responsive__link after-transform">
                                 <a onclick="afficherMasquer(1)" style="cursor:pointer; color: white">Association <i class="fas fa-angle-down"></i></a>
                                     <ul class="ul-dropdown-responsive" id="1" style="display: none">
-                                        <li class="navbar-responsive__link after-transform"><a href="../page/association/membre.php">Membre</a></li>
-                                        <li class="navbar-responsive__link after-transform"><a href="../page/association/logo.php">Logo</a></li>
-                                        <li class="navbar-responsive__link after-transform"><a href="../page/association/partenariat.php">Partenariat</a></li>
+                                        <li class="navbar-responsive__link after-transform"><a href="?section=membre">Membre</a></li>
+                                        <li class="navbar-responsive__link after-transform"><a href="?section=logo">Logo</a></li>
+                                        <li class="navbar-responsive__link after-transform"><a href="?section=partenariat">Partenariat</a></li>
                                     </ul>
                             </li>
-                            <li class="navbar-responsive__link after-transform"><a href="../page/principal/calendar.php">Calendar</a>
+                            <li class="navbar-responsive__link after-transform"><a href="?section=calendrier">Calendar</a>
                             </li>
-                            <li class="navbar-responsive__link after-transform"><a href="../page/principal/news.php">News</a></li>
-                            <li class="navbar-responsive__link after-transform"><a href="../page/principal/media.php">Media</a></li>
+                            <li class="navbar-responsive__link after-transform"><a href="?section=news">News</a></li>
+                            <li class="navbar-responsive__link after-transform"><a href="?section=media">Media</a></li>
                         </ul>
                     </div>
         </nav>

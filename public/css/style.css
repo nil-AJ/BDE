@@ -246,6 +246,19 @@ body {
     width: 130px;
     height: 80px;
 }
+
+
+
+
+
+
+
+.foot-text-center{
+    padding-left: 25%
+}
+.foot-text-lr{
+    padding-left: 13%
+}
 .menu-foot{
     margin-left: 50px;
 }
@@ -343,10 +356,17 @@ body {
     top: 0%;
 }
 .icon {
-    padding-top: 8px;
+    padding-bottom:  95px;
+    padding-left: 21px;
+
 }
 .icon-phone {
-    padding-top: 14px;
+   padding-bottom:  130px;
+    padding-left: 40px;
+}
+.icon-mail {
+    padding-bottom:  100px;
+    padding-left: 21px;
 }
 @media (max-width: 1052px) {
 
@@ -376,6 +396,10 @@ body {
         margin-left: 250px;
     }
 }
+
+
+
+
 /*index */
 .number{
     padding-top: 50px;
