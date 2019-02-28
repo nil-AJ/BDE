@@ -34,12 +34,18 @@ function uploadMember()
 
     function inscription()
     {
+        if($_SESSION['user_info'][0])
+        {
         if(isset($_POST['name']) && isset($_POST['prename']) && isset($_POST['password']) && isset($_POST['email']) && isset($_POST['status']) && isset($_POST['class']) )
         {
             include 'model/model_inscription.php';
         }
         
         $GLOBALS['u']->add("view/view_administration/inscription.php",1);
+        }else{
+
+            throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
+        }
     }
 
 
@@ -51,10 +57,22 @@ function uploadMember()
             if($_SESSION['user_info'][0])
             {
                 session_destroy();
-                header('Location: .');
+                header('Location:.?section=connexion');
             }
             }else{
 
                 throw new Exception(404); 
             }
     }
+
+function administration_index()
+{
+    if($_SESSION['user_info'][0])
+    {
+    $GLOBALS['u']->add("view/view_administration/administration_index.php",1);
+    }else{
+
+        throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
+    }
+
+}

@@ -48,7 +48,11 @@ include('controleur/controleur_administration.php');
                 case 'deconnexion':
                     deconnexion();
                     break;
-                
+
+                case 'administration_index':
+                    administration_index();
+                    break;
+
                 case 'upload':
                     uploadMember();
                     break;

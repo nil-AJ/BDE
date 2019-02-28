@@ -14,7 +14,7 @@ include 'model/class/ConnexionBDD.class.php';
     if($rep)
     {
         $_SESSION['user_info'] = array(true,$rep['name'], $rep['prename'],$rep['email'],$rep['class'],$rep['status']);
-        header('Location: .');
+        header('Location: .?section=administration_index');
         
     }else{
         $_SESSION['user_info']= array(false);

@@ -14,7 +14,8 @@
         <link href="public/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link href="public/lib/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" >
-        <?php include 'public/css/membre_style.css';?>
+        <!--  include 'public/css/membre_style.css'; -->
+
     </head>
     <body>
         <nav>

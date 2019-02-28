@@ -1,128 +1,48 @@
-<br><br><br><br><br><br><br>
-
-<div class="container">
-    <div class="text-center">
-        <h5>CONNEXION</h5>
-    </div>
-    <div class="row justify-content-center">
-        <form action="" method="POST">
-            <div class="col-12 ">
-                <div>
+<div class="container-fluid">
+    <section class="user row justify-content-center">
+        <div class="user_options-container">
+            <div class="user_options-text">
+                <div class="user_options-unregistered">
+                    <div class="">
+                        <strong><h1>Bienvenue</h1></strong>
+                    </div>
                     <div>
+                        <h5 style="padding-left: 50px">Au menbre du BDE</h5>
+                        <p style="padding-top: 50px"><i class="fas fa-1x fa-info-circle"></i> Cette pages et reserver au
+                            membre du BDE CFA INSTA</p>
+                    </div>
+
+                </div>
+            </div>
+            <form class="text-center" action="" method="POST">
+                <div class="user_options-forms" id="user_options-forms">
+                    <div class=" user_forms-login">
                         <div>
+                            <strong><h2>CONNEXION</h2></strong>
+                            <i class="fas fa-5x fa-users"></i>
+                        </div>
+                        <div class=" inputconex">
                             <label class="inserticon-fontico">
                                 <i class="fas fa-envelope"></i>
                             </label>
-                            <input  name="email" type="email" class="input-text-h input-text"
-                                   placeholder="Saisissez votre email...">
+                            <input type="email" placeholder="Saisissez votre email..." name="email" class="" required
+                                   autofocus/>
                         </div>
-                    </div>
-                </div>
-                <!-- input text 2 -->
-                <input  name="email" type="email" class=""
-                        placeholder="Saisissez votre email...">
-                <div>
-                    <div>
-                        <div>
+                        <div class="inputconex">
                             <label class="inserticon-fontico">
                                 <i class="fas fa-lock"></i>
-                             </label>
-                            <input  type="password" name="password" class="input-text-b input-text"
-                                    placeholder="Saisissez votre password...">
+                            </label>
+                            <input type="password" placeholder="Saisissez votre password..." name="password" class=""
+                                   required/>
+                        </div>
+
+                        <div>
+                            <button class=" submit-bouton " type="submit" value="Connexion">CONNEXION</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- input rech-->
-            <div class="col-12 ">
-                <button class=" submit-bouton " type="submit" value="Connexion">CONNEXION</button>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </section>
 </div>
-
-
-
-
-
-
-
-
-
-
-<style>
-
-
-    .inserticon-fontico {
-        color: black;
-        float: left;
-        position: relative;
-        z-index: 2;
-        left: 0.5em;
-        top: 0.9em;
-        width: 0;
-    }
-
-    input[type="email"], input[type="password"] {
-        padding-left: 35px;
-    }
-
-    /*form bouton */
-    .submit-bouton {
-        font-size: 14px;
-        background-color: #01c3a7;
-        color: white;
-        padding: 10px 42px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-    }
-
-    .submit-bouton:hover {
-        background-color: #03b198;
-    }
-
-
-
-    /* input form*/
-    .input-text-h {
-        border: 1px solid #dce3e6;
-        border-radius: 5px 5px 0px 0px;
-    }
-
-    .input-text-h:focus {
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #01c3a7;
-    }
-
-    .input-text-b {
-        border: 1px solid #dce3e6;
-        border-radius: 5px 5px 5px 5px;
-    }
-
-    .input-text-b:focus {
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #01c3a7;
-    }
-
-    .input-text {
-        z-index: 5;
-        color: black;
-        outline: none;
-        width: 100%;
-        padding: 9px;
-        background-color: #fafbfc;
-        resize: vertical;
-    }
-
-    .input-text:focus {
-        background-color: white;
-    }
-    /* END input text */
-
-</style>
-
-
-
 
