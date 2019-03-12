@@ -12,7 +12,7 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
-    background-image: url("../../style/image/font/verdure-nav.png");
+    background-image: url("/public/image/font/verdure-nav.png");
     background-repeat: no-repeat;
 }
 .navbar-responsive__nav {
@@ -254,10 +254,15 @@ body {
 
 
 .foot-text-center{
-    padding-left: 25%
+    padding-left: 35%
 }
-.foot-text-lr{
-    padding-left: 13%
+.foot-text-lr a{
+    color: white;
+    padding-left: 13%;
+}
+.foot-text-lr a:hover{
+    color: white;
+    padding-left: 13%;
 }
 .menu-foot{
     margin-left: 50px;
@@ -558,7 +563,6 @@ figure.effect-X figcaption:hover{
  * Page background
  */
 .user {
-
     margin-top: 17%;
     margin-bottom: 17%;
 }
@@ -566,7 +570,6 @@ figure.effect-X figcaption:hover{
     position: relative;
     width: 80%;
 }
-
 .user_options-text {
     display: flex;
     justify-content: space-between;
@@ -574,21 +577,17 @@ figure.effect-X figcaption:hover{
     background-color: rgba(34, 34, 34, 0.85);
     border-radius: 3px;
 }
-
-
 .user_options-unregistered {
     width: 50%;
     padding: 75px 45px;
     color: #fff;
     font-weight: 300;
 }
-
 .user_options-forms {
     position: absolute;
     top: 50%;
     left: 30px;
     width: calc(40% - 50px);
-    min-height: 480px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
@@ -599,12 +598,17 @@ figure.effect-X figcaption:hover{
     transition: transform 1s ease-in-out;
     transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
+.user_options-forms-op {
+    height: 480px;
+}
+.user_options-forms-errr {
+    height: 580px;
+}
+
 
 .user_options-forms .user_forms-login {
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
-
-
 .user_options-forms .user_forms-signup,
 .user_options-forms .user_forms-login {
     position: absolute;
@@ -686,6 +690,21 @@ figure.effect-X figcaption:hover{
     box-shadow: none;
 }
 
+.inputconex_err input {
+    margin-top: 30px;
+    font-weight: 300;
+    border: 0;
+    border-bottom: 1.5px solid red;
+    width: 100%;
+    height: 36px;
+    font-size: 20px;
+}
+
+.inputconex_err input:focus {
+    border-bottom: 1.5px solid red;
+    outline: none;
+    box-shadow: none;
+}
 
 input[type="email"], input[type="password"] {
     padding-left: 38px;
@@ -707,6 +726,26 @@ input[type="email"], input[type="password"] {
 .submit-bouton:hover {
     background-color: #03b198;
 }
+
+/*form bouton err*/
+.submit-bouton-err {
+    margin-top: 40px;
+    font-size: 14px;
+    background-color: #DC0102;
+    color: white;
+    padding: 10px 42px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-bouton-err:hover {
+    background-color: #B70203;
+}
+
+
+
+
 
 /*connexion end */
 

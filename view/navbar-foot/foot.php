@@ -49,13 +49,31 @@
         <div class="container-fluid">
             <div  class="row justify-content-center no-gutters">
                 <div  class="foot-text-center col-12 col-sm-9 col-md-9">
-                    <p class="text-footer"> ©2018 BDE CFA INSTA . All Rights Reserved</p>
+                    <p class="text-footer"> ©2018 BDE CFA INSTA . All Rights Reserved </p>
                 </div>
-                <div class="foot-text-lr col-5 col-md-3">
+                <?php
+                $connect = false;
+                if(isset($_SESSION['user_info']))
+                {
+                if($_SESSION['user_info']['verification'][0]== true)
+                    {
+                        $connect = true;
+                    }
+                }
+                    if(!$connect)
+                    {
+                        echo ' <div class="foot-text-lr col-5 col-md-3">
                     <a  href="?section=connexion">connexion BDE</a>
-                </div>
-            </div>
+                </div>';
 
+                    }
+                    if($connect)
+                    {
+                        echo ' < <div class="foot-text-lr col-5 col-md-3">
+                    <a  href="?section=administration_index">membre BDE</a>
+                </div>   ';
+                }?>
+            </div>
         </div>
     </div>
 </footer>
