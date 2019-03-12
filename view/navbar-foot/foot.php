@@ -77,8 +77,7 @@
         </div>
     </div>
 </footer>
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- JavaScript -->
     <script  src="public/Javascript/display-none.js"></script>
     <script  src="public/Javascript/navbar.js"></script>
@@ -87,13 +86,9 @@
     <script defer src="public/lib/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
     <!-- jQuery -->
     <!-- jQuery Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- end -->
-
-
-
 
 </body>
 </html>
