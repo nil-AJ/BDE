@@ -14,6 +14,22 @@
         <link href="public/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link href="public/lib/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" >
+    <!--
+        FullCalendar CSS/JS
+        ===================
+        @ Author : LordAtomic
+        #   Please Don't move the script/css order and position on the page.
+            See https://fullcalendar.io/docs/installation
+            and bug : https://stackoverflow.com/questions/50289327/fullcalendar-cannot-read-property-fn-of-undefined
+        #   The import for JQuery is here not in foot.php, d'ont add link for JQuery can be create conflict with FullCalendar.
+    -->
+        <link href="public/template/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+        <link href="public/template/fullcalendar/fullcalendar.print.css"  rel="stylesheet" media="print">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src='public/template/fullcalendar/lib/moment.min.js'></script>
+        <script src="public/template/fullcalendar/fullcalendar.min.js" ></script>
+        <script src='public/template/fullcalendar/locale/fr.js'></script>
+        <script type='text/javascript' src='public/template/fullcalendar/gcal.js'></script>
         <!--  include 'public/css/membre_style.css'; -->
 
     </head>
