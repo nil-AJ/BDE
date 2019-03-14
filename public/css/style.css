@@ -273,6 +273,10 @@ body {
     padding-left: 55%;
 }
 .footer-haut {
+    margin-top: 1px;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color:#DCDCDC;
     background-color: #FBFCFA;
     padding-bottom: 55px;
 }
@@ -409,11 +413,12 @@ body {
 .number{
     padding-top: 50px;
     padding-bottom: 100px;
-}
-.number-hr{
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color:#DCDCDC;
     background: #F6F6F6;
-    color: #696969;
 }
+
 .count{
     Font-Weight: Bold;
     font-size: 25px;
@@ -433,10 +438,7 @@ body {
     height:90px;
 }
 /* Vmedia image buton redif*/
-figure.font img{
-    background-color: blueviolet;
-    opacity: 6;
-}
+
 figure.imga img{
 
     opacity: 6;
@@ -743,13 +745,25 @@ input[type="email"], input[type="password"] {
     background-color: #B70203;
 }
 
-
-
-
-
 /*connexion end */
-
-
-
-
+/*calander home*/
+.calander-home{
+    background-color:white ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.text-home{
+    position: relative;
+    font-size: 50px;
+    margin-right: 13%;
+    padding-top: 15%;
+    /* Rotation du div */
+    transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* Internet Explorer */
+    -moz-transform:rotate(-30deg); /* Firefox */
+    -webkit-transform:rotate(-30deg); /* Safari et Chrome */
+    -o-transform:rotate(-30deg); /* Opera */
+}
+/*calander end
+*/
 

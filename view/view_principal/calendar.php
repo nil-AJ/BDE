@@ -13,6 +13,10 @@
                 center: 'title',
                 right: ''
             },
+
+
+
+
             googleCalendarApiKey: 'AIzaSyC4hlCaRtORlZoSFzgeQqQYn4nXpIgk3NA',
             eventSources: [
                 {
@@ -20,6 +24,7 @@
                     className: 'gcal-event'
                 },
             ],
+
             eventColor: '#264a80'
         });
     });

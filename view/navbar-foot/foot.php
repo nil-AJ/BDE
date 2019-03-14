@@ -2,7 +2,6 @@
 
 
     <div class="footer-haut ">
-        <hr>
         <div class="container-fluid">
             <div class="row ">
                 <div class="menu-foot ">

@@ -1,244 +1,206 @@
 <br><br><br><br><br><br>
-<div class="container ordi">
-    <div class="row text-center justify-content-center align-content-end ">
-        <!--Trésorière -->
-        <div class="col tresoriere ">
-            <figure class="membre ">
-                <img src="public/image/membre/audrey.jpg">
-                <figcaption>
 
+<div class="container">
+    <div class="content">
+        <div class="grid">
+            <figure class="effect-layla">
+                <img src="public/image/membre/nil.png" alt="img06"/>
+                <figcaption>
+                    <h4>Gabin chambon</h4>
+                    <h5>Présient</h5>
+                    <p>When Layla appears</p>
                 </figcaption>
             </figure>
-            <h5>Floriant</h5>
-            <h5>Trésorié </h5>
-        </div>
-        <!-- prési-->
-        <div class="col president">
-            <figure class="membre">
-                <img src="public/image/membre/Antoine.png">
+            <figure class="effect-layla">
+                <img src="public/image/membre/nil.png" alt="img06"/>
                 <figcaption>
-
+                    <h4>Nil Julitte</h4>
+                    <h5>Vice présient</h5>
+                    <p>When Layla appears</p>
                 </figcaption>
             </figure>
-            <h5>Gabin Chambon</h5>
-            <h5>Président </h5>
         </div>
-        <!--vice prési -->
-        <div class="col vice-president">
-            <figure class="membre ">
-                <img src="public/image/membre/Antoine.png">
-                <figcaption>
-
-                </figcaption>
-            </figure>
-            <h5>Nil</h5>
-            <h5>vice Président </h5>
-        </div>
-    </div>
-    <div class="row text-center justify-content-center align-content-end">
-        <!--Secrétaire -->
-        <div class="col-3 secretaire ">
-            <figure class="membre ">
-                <img src="public/image/membre/Antoine.png">
-                <figcaption>
-
-                </figcaption>
-            </figure>
-            <h5>Hajar</h5>
-            <h5>Secrétaire</h5>
-        </div>
-        <div class="col-3 secretaire ">
-            <figure class="membre ">
-                <img src="public/image/membre/Antoine.png">
-                <figcaption>
-
-                </figcaption>
-            </figure>
-            <h5>Catarina</h5>
-            <h5>Secrétaire</h5>
-        </div>
-
-    </div>
-    <div class="row text-center justify-content-center align-content-end">
-        <!--Secrétaire -->
-        <div class="col-3 secretaire ">
-            <figure class="membre ">
-                <img src="public/image/membre/Antoine.png">
-                <figcaption>
-
-                </figcaption>
-            </figure>
-            <h5>Antoine</h5>
-            <h5>Superviseur</h5>
-        </div>
-
-    </div>
+    </div><!-- /container -->
 </div>
 
 
-<div class="top-line">
-    <div class="test shadow line-l"></div>
-    <div class="test shadow line"></div>
-    <div class="test shadow line-r"></div>
-</div>
+<style>
+    figure.effect-layla img {
+        height: 280px;
+    }
 
+    figure.effect-layla figcaption {
+        padding: 3em;
+    }
 
-<div class="tab_container row justify-content-center">
+    figure.effect-layla figcaption::before,
+    figure.effect-layla figcaption::after {
+        position: absolute;
+        content: '';
+        opacity: 0;
+    }
 
-    <label for="tab1"><span>Pôle sportif</span></label>
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2"><span>Pôle campus</span></label>
-    <input id="tab3" type="radio" name="tabs">
-    <label for="tab3"><span>Pôle compétition</span></label>
-    <input id="tab4" type="radio" name="tabs">
-    <label for="tab4"><span>Pôle jeux</span></label>
-    <input id="tab5" type="radio" name="tabs">
-    <label for="tab5"><span>Pôle voyage</span></label>
-    <section id="content1" class="tab-content">
-        <h3>Pôle sportif</h3>
-        <div class="row text-center justify-content-center align-content-end">
-            <!--Secrétaire -->
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    figure.effect-layla figcaption::before {
+        top: 50px;
+        bottom: 50px;
+        right: 30px;
+        left: 30px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>angel</h5>
-                <h5>Secrétaire</h5>
-            </div>
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    figure.effect-layla figcaption::after {
+        top: 30px;
+        bottom: 30px;
+        right: 50px;
+        left: 50px;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        -webkit-transform: scale(1, 0);
+        transform: scale(1, 0);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>Catarina</h5>
-                <h5>Secrétaire</h5>
-            </div>
-        </div>
-    </section>
+    figure.effect-layla img,
+    figure.effect-layla figcaption::before,
+    figure.effect-layla figcaption::after,
+    figure.effect-layla p {
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
 
-    <section id="content2" class="tab-content">
-        <h3>Pôle campus</h3>
-        <div class="row text-center justify-content-center align-content-end">
-            <!--Secrétaire -->
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    figure.effect-layla:hover img {
+        opacity: 0.8;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>mel</h5>
-                <h5>Secrétaire</h5>
-            </div>
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    figure.effect-layla:hover figcaption::before,
+    figure.effect-layla:hover figcaption::after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    figure.effect-layla:hover h5,
+    figure.effect-layla:hover h4,
+    figure.effect-layla:hover p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>Catarina</h5>
-                <h5>Secrétaire</h5>
-            </div>
+    figure.effect-layla:hover figcaption::after,
+    figure.effect-layla:hover h4,
+    figure.effect-layla:hover  h5,
+    figure.effect-layla:hover p,
+    figure.effect-layla:hover img {
+        -webkit-transition-delay: 0.15s;
+        transition-delay: 0.15s;
+    }
 
-        </div>
-    </section>
+    /* Common style */
+    .grid figure {
+        position: relative;
+        overflow: hidden;
+        min-width: 200px;
+        max-width: 280px;
+        max-height: 280px;
+        width: 48%;
+        background: red;
+        text-align: center;
+        cursor: pointer;
+    }
 
-    <section id="content3" class="tab-content">
-        <h3>Pôle compétition</h3>
-        <div class="row text-center justify-content-center align-content-end">
-            <!--Secrétaire -->
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    .grid figure img {
+        position: relative;
+        display: block;
+        min-height: 100%;
+        max-width: 100%;
+        opacity: 0.8;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>angel</h5>
-                <h5>Secrétaire</h5>
-            </div>
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    .grid figure figcaption {
+        padding: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.25em;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>Catarina</h5>
-                <h5>Secrétaire</h5>
-            </div>
-        </div>
-    </section>
+    .grid figure figcaption::before,
+    .grid figure figcaption::after {
+        pointer-events: none;
+    }
 
-    <section id="content4" class="tab-content">
-        <h3>Pôle jeux</h3>
-        <div class="row text-center justify-content-center align-content-end">
-            <!--Secrétaire -->
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    .grid figure figcaption,
+    .grid figure figcaption > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 115%;
+        height: 115%;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>angel</h5>
-                <h5>Secrétaire</h5>
-            </div>
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    .grid figure figcaption > a {
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+    }
+    figure.effect-layla h4{
+        padding-top: 40%;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
+    figure.effect-layla h5{
+        padding-top: 2%;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>Catarina</h5>
-                <h5>Secrétaire</h5>
-            </div>
-        </div>
-    </section>
+    figure.effect-layla p {
+        padding: 0.5em 2em;
+        text-transform: none;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 60px, 0);
+        transform: translate3d(0, 60px, 0);
+    }
+    figure.effect-layla h5{
+        -webkit-transform: translate3d(0, 80px, 0);
+        transform: translate3d(0, 80px, 0);
+    }
 
-    <section id="content5" class="tab-content">
-        <h3>Pôle voyage</h3>
-        <div class="row text-center justify-content-center align-content-end">
-            <!--Secrétaire -->
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    figure.effect-layla h4 {
+        -webkit-transform: translate3d(0, 80px, 0);
+        transform: translate3d(0, 80px, 0);
+    }
+    .grid figure h5 {
+        word-spacing: -0.15em;
+        font-weight: 500;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>angel</h5>
-                <h5>Secrétaire</h5>
-            </div>
-            <div class="col-4 secretaire ">
-                <figure class="membre ">
-                    <img src="public/image/membre/Antoine.png">
-                    <figcaption>
+    .grid figure h4 {
+        word-spacing: -0.15em;
+        font-weight: 500;
+    }
 
-                    </figcaption>
-                </figure>
-                <h5>Catarina</h5>
-                <h5>Secrétaire</h5>
-            </div>
-        </div>
-    </section>
-</div>
+    .grid figure h5,
+    .grid figure h4,
+    .grid figure p {
+        margin: 0;
+    }
 
-<?php include('public/css/membre_style.css');?>
-<script>
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-</script>
-<div class="container mobil">
-</div>
+    .grid figure p {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+</style>
 <br><br><br><br><br><br>

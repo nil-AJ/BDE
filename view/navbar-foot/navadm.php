@@ -4,25 +4,25 @@
             <div class="ico-prof">
                 <i class="fas fa-3x fa-user-circle"></i>
             </div>
-            <nav class="nav ">
-                <ul class="  nav-prof">
-                    <li class="" id="dropdown">
-                        <div class='colo-aps-prof'>
-                            <?php
-                            echo "<a  data-toggle=\"collapse\" href=\"#about1\" >" . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "<i  class=\"fas ico fa-angle-down\"></i></a>";
-                            ?>
-                        </div>
-                        <div id="about1" class=" collapse">
-                            <ul class="list">
-                                <li><a class="dropdown-item button-deco" href="?section=deconnexion">DECONNEXION</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Profil</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <nav class="nav ">
+            <ul class="  nav-adm">
+                <li class="" id="dropdown">
+                    <div class='colo-aps'>
+                        <?php
+                        echo "<a  data-toggle=\"collapse\" href=\"#about1\" >" . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "<i  class=\"fas ico fa-angle-down\"></i></a>";
+                        ?>
+                    </div>
+                    <div id="about1" class=" collapse">
+                        <ul class="list">
+                            <li><a class="dropdown-item button-deco" href="?section=deconnexion">DECONNEXION</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Profil</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <nav class="nav">
             <ul class="  nav-adm">
                 <li class="" id="dropdown">
@@ -74,18 +74,19 @@
 
 
 <style>
-    .nav-prof, .nav-adm {
+  .nav-adm {
         padding-left: 0px;
     }
 
-    }
+
     .ico-prof {
         margin-left: 8%;
     }
 
     .debut-menu {
         background-color: blue;
-        padding-top: 45%;
+        padding-top: 40%;
+        padding-bottom: 17%;
     }
 
     .app {
@@ -167,12 +168,5 @@
     .nav-adm {
         list-style-type: none;
     }
-
-    .nav-prof {
-        list-style-type: none;
-        color: black;
-        margin-top: 10%
-    }
-
 
 </style>
