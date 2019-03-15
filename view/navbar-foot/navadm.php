@@ -1,172 +1,141 @@
-<section class="app">
-    <aside class="sidebar">
-        <div class="debut-menu ">
-            <div class="ico-prof">
-                <i class="fas fa-3x fa-user-circle"></i>
-            </div>
+
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Administration BDE</h3>
         </div>
-        <nav class="nav ">
-            <ul class="  nav-adm">
-                <li class="" id="dropdown">
-                    <div class='colo-aps'>
-                        <?php
-                        echo "<a  data-toggle=\"collapse\" href=\"#about1\" >" . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "<i  class=\"fas ico fa-angle-down\"></i></a>";
-                        ?>
-                    </div>
-                    <div id="about1" class=" collapse">
-                        <ul class="list">
-                            <li><a class="dropdown-item button-deco" href="?section=deconnexion">DECONNEXION</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Profil</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <nav class="nav">
-            <ul class="  nav-adm">
-                <li class="" id="dropdown">
-                    <div id="about1" class=" collapse">
-                        <ul class="list">
-                            <li><a class="dropdown-item button-deco" href="?section=deconnexion">DECONNEXION</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Profil</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <ul class=" nav-adm  ">
-                <li class="" id="dropdown">
-                    <div class="colo-aps">
-                        <a data-toggle="collapse" href="#about2">
-                            Dropdown <i class="fas ico fa-angle-down"></i>
-                        </a>
-                    </div>
-                    <div id="about2" class="collapse">
-                        <ul class="list">
-                            <li><a class="dropdown-item button-deco" href="">DECONNEXION</a></li>
-                            <li><a class="dropdown-item" href="#">Profil</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-            <ul class="nav-adm">
-                <li class="" id="dropdown">
-                    <div class="colo-aps">
-                        <a data-toggle="collapse" href="#about3">
-                            Dropdown <i class="fas ico fa-angle-down"></i>
-                        </a>
-                    </div>
-                    <div id="about3" class="collapse">
-                        <ul class="list">
-                            <li><a class="dropdown-item button-deco" href="">DECONNEXION</a></li>
-                            <li><a class="dropdown-item" href="#">Profil</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <ul class="list-unstyled components">
+            <li class="active">
+                <?php
+                echo "<a  href=\"#homeSubmenu\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\">" . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "</a>";
+                ?>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">home1</a>
+                    </li>
+                    <li>
+                        <a href="#">home2</a>
+                    </li>
+                    <li>
+                        <a href="#">home3</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Calandrier</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">page1</a>
+                    </li>
+                    <li>
+                        <a href="#">page2</a>
+                    </li>
+                    <li>
+                        <a href="#">page3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
 
 
-    </aside>
-</section>
+    </nav>
+</div>
+
+
 
 
 <style>
-  .nav-adm {
-        padding-left: 0px;
+    a,
+    a:hover,
+    a:focus{
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
     }
-
-
-    .ico-prof {
-        margin-left: 8%;
-    }
-
-    .debut-menu {
-        background-color: blue;
-        padding-top: 40%;
-        padding-bottom: 17%;
-    }
-
-    .app {
-        position: absolute;
-        height: 100vh;
-    }
-
-    .app {
-        position: fixed;
-    }
-
-    .ico {
-    }
-
-    #dropdown {
-        padding: 0px 0px 0px 140px;
-    }
-
-    #dropdown:hover {
-        background-color: #ddd;
-    }
-
-    /* -------------
-    Sidebar
-    ----------------*/
-    .sidebar {
-
-        border-width: 0px 1px 0px 0px;
-        border-style: solid;
-        border-color: #DCDCDC;
-        position: absolute;
-        width: 15em;
+    .wrapper {
         height: 100%;
-        background-color: #F6F6F6;
-        -webkit-transform: translateZ(0);
-        visibility: visible;
-        -webkit-backface-visibility: hidden;
-    }
-
-    /* -------------
-    Sidebar Nav
-    ----------------*/
-
-    .colo-aps a {
-        overflow: hidden;
+        position: fixed;
+        display: flex;
         width: 100%;
-        height: 5%;
-        color: #333;
+        align-items: stretch;
+    }
+    #sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        background: #7386D5;
+        color: #fff;
+        transition: all 0.3s;
+    }
+
+
+    #sidebar .sidebar-header{
+        margin-top: 27%;
+        padding: 20px;
+        background: #6d7fcc;
+    }
+    #sidebar ul.components{
+        padding: 20px 0px;
+        border-bottom: 1px solid #47748b;
+    }
+
+    #sidebar ul p{
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+    #sidebar ul li a{
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+    #sidebar ul li a:hover {
+        color: #7386D5;
+        background: #fff;
+    }
+
+    #sidebar ul li.active>a,
+    a[aria-expanded="true"] {
+        color: #fff;
+        background: #6d7fcc;
+    }
+    a[data-toggle="collapse"] {
+        position: relative;
+    }
+    .dropdown-toggle::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    ul ul a {
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: #6d7fcc;
+    }
+
+
+
+    ul.CTAs a {
         text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .colo-aps a:hover {
-        /*background-color: #ddd;*/
-
-    }
-
-    .colo-aps a:active {
-        /*background-color: #ddd;*/
-    }
-
-    .list {
-        list-style-type: none;
-        overflow: hidden;
-        width: 100%;
-        height: 5%;
-        color: #333;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .list :hover {
-        background-color: #ddd;
+        font-size: 0.9em !important;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 5px;
     }
 
 
-    .nav-adm {
-        list-style-type: none;
-    }
 
 </style>

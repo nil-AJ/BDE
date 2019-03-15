@@ -17,7 +17,7 @@
     <!--
         FullCalendar CSS/JS
         ===================
-        @ Author : LordAtomic
+        @ Author : Antoine
         #   Please Don't move the script/css order and position on the page.
             See https://fullcalendar.io/docs/installation
             and bug : https://stackoverflow.com/questions/50289327/fullcalendar-cannot-read-property-fn-of-undefined
@@ -53,7 +53,6 @@
                                     <a href="">Association <i class="fas fa-angle-down"></i></a>
                                     <ul class="ul-dropdown">
                                         <li class="navbar__link after-transform"><a href="?section=membre">Membre</a></li>
-                                        <li class="navbar__link after-transform"><a href="?section=logo">Logo</a></li>
                                         <li class="navbar__link after-transform"><a href="?section=partenariat">Partenariat</a></li>
                                     </ul>
                                 </li>
@@ -71,7 +70,6 @@
                                 <a onclick="afficherMasquer(1)" style="cursor:pointer; color: white">Association <i class="fas fa-angle-down"></i></a>
                                     <ul class="ul-dropdown-responsive" id="1" style="display: none">
                                         <li class="navbar-responsive__link after-transform"><a href="?section=membre">Membre</a></li>
-                                        <li class="navbar-responsive__link after-transform"><a href="?section=logo">Logo</a></li>
                                         <li class="navbar-responsive__link after-transform"><a href="?section=partenariat">Partenariat</a></li>
                                     </ul>
                             </li>

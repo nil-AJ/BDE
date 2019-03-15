@@ -17,10 +17,6 @@ include('controleur/controleur_administration.php');
                     membre();
                     break;
 
-                case 'logo':
-                    logo();
-                    break;
-
                 case 'partenariat':
                     partenariat();
                     break;
