@@ -40,14 +40,15 @@
                 <div class="navbar__wrapper">
                     <nav class="navbar__menu">
                         <a class="navbar__brand" href="index.php"><img
-                                    src="public/image/logo/BDE_CFA_INSTA/unnamed.png"> BDE CFA INSTA</a>
+                                    src="public/image/logo/BDE_CFA_INSTA/logo_BDE_CFA_INSTA-noir.png"> BDE CFA INSTA</a>
+                        <!--  NAVBAR MOBIL -->
                         <div id="nav-icon">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        
+                        <!-- END NAVBAR MOBIL -->
                             <ul class="navbar__nav">
                                 <li class="navbar__link after-transform"><a href=".">Home</a></li>
                                 <li class="navbar__link after-transform sub-dropdown">
@@ -64,7 +65,8 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="navbar-responsive">
+                <!--  NAVBAR MOBIL -->
+                <div class="navbar-responsive">
                         <ul class="navbar-responsive__nav ">
                             <li class="navbar-responsive__link after-transform"><a href="/index.php">Home</a></li>
                             <li class="navbar-responsive__link after-transform">

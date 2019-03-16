@@ -3,7 +3,12 @@ body {
     background: #fafafa;
 }
 
-/*navbar*/
+/*****************
+*****************
+CSS navbar.php
+
+****************
+****************/
 .navbar-responsive {
     z-index: 2;
     position: fixed;
@@ -82,8 +87,8 @@ body {
 }
 
 .navbar .navbar__wrapper .navbar__brand img {
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
 }
 
 .after-transform a {
@@ -240,7 +245,16 @@ body {
         font-size: 22px;
     }
 }
-/*footer*/
+/*****************
+END NAVBAR.php
+****************/
+
+/*****************
+*****************
+CSS footer.php
+
+****************
+****************/
 .logo-foot {
     position: relative;
     width: 130px;
@@ -399,8 +413,17 @@ body {
         margin-left: 250px;
     }
 }
+/*****************
+END footer.php
+****************/
 
-/*index */
+
+/*****************
+*****************
+CSS index.php
+
+****************
+****************/
 .number{
     padding-top: 50px;
     padding-bottom: 100px;
@@ -418,6 +441,12 @@ body {
     Font-Weight: Bold;
     font-size: 25px;
 }
+
+/*****************
+END index.php
+****************/
+
+
 
 /*Menbre*/
 .cercle-image{
