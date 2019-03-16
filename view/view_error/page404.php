@@ -1,11 +1,15 @@
 
 <div class="containerr">
+    <div class="err404">
+        <h1> 404</h1>
+        <h2> Erreur page inexistante</h2>
+
+    </div>
     <div class="boo-wrapper">
         <div class="boo">
             <div class="face"></div>
         </div>
         <div class="shadow"></div>
-        <h1> Page inexistante Erreur 404 </h1>
     </div>
 </div>
 
@@ -43,23 +47,29 @@
         background-color: #f7f7f7;
     }
 
+    .err404 h1{
+        font-size: 150px;
+        font-weight: 600;
+    }
+    .err404 h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+
     .containerr {
+        margin-top: 10%;
         font-family: 'Varela Round', sans-serif;
         color: #9b9b9b;
         position: relative;
         height: 100vh;
         text-align: center;
-        font-size: 16px;
-    }
-    .containerr h1 {
-        font-size: 32px;
-        margin-top: 32px;
+
     }
 
     .boo-wrapper {
         width: 100%;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         paddig-top: 64px;
@@ -122,6 +132,7 @@
     }
 
     .shadow {
+        opacity: 0.5;
         width: 128px;
         height: 16px;
         background-color: rgba(234, 234, 234, 0.75);

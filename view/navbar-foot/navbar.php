@@ -30,6 +30,7 @@
         <script src="public/template/fullcalendar/fullcalendar.min.js" ></script>
         <script src='public/template/fullcalendar/locale/fr.js'></script>
         <script type='text/javascript' src='public/template/fullcalendar/gcal.js'></script>
+
         <!--  include 'public/css/membre_style.css'; -->
 
     </head>

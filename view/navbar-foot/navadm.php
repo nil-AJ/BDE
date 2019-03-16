@@ -11,19 +11,16 @@
                 ?>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a href="#">home1</a>
+                        <a href="?section=deconnexion">Déconection <i class="fas fa-sign-out-alt"></i></a>
                     </li>
                     <li>
-                        <a href="#">home2</a>
-                    </li>
-                    <li>
-                        <a href="#">home3</a>
+                        <a href="#"> Modifier sont profil</a>
                     </li>
                 </ul>
             </li>
 
             <li>
-                <a href="#">Calandrier</a>
+                <a href="#"><i class="far fa-calendar-alt"></i> Calandrier</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
@@ -33,9 +30,6 @@
                     </li>
                     <li>
                         <a href="#">page2</a>
-                    </li>
-                    <li>
-                        <a href="#">page3</a>
                     </li>
                 </ul>
             </li>
@@ -55,9 +49,10 @@
 
 
 <style>
-    a,
-    a:hover,
-    a:focus{
+
+    .wrapper a,
+    .wrapper a:hover,
+    .wrapper a:focus{
         color: inherit;
         text-decoration: none;
         transition: all 0.3s;
@@ -72,8 +67,8 @@
     #sidebar {
         min-width: 250px;
         max-width: 250px;
-        background: #7386D5;
-        color: #fff;
+        background: #F5F5F5;
+        color: black;
         transition: all 0.3s;
     }
 
@@ -81,11 +76,10 @@
     #sidebar .sidebar-header{
         margin-top: 27%;
         padding: 20px;
-        background: #6d7fcc;
+        background: #D3D3D3;
     }
     #sidebar ul.components{
-        padding: 20px 0px;
-        border-bottom: 1px solid #47748b;
+        border-bottom: 1px solid #DCDCDC;
     }
 
     #sidebar ul p{
@@ -100,14 +94,14 @@
         display: block;
     }
     #sidebar ul li a:hover {
-        color: #7386D5;
-        background: #fff;
+        color: black;
+        background: #DCDCDC;
     }
 
     #sidebar ul li.active>a,
     a[aria-expanded="true"] {
-        color: #fff;
-        background: #6d7fcc;
+        color: black;
+        background: #DCDCDC;
     }
     a[data-toggle="collapse"] {
         position: relative;
@@ -120,15 +114,15 @@
         transform: translateY(-50%);
     }
 
-    ul ul a {
+    .wrapper ul ul a {
         font-size: 0.9em !important;
         padding-left: 30px !important;
-        background: #6d7fcc;
+        background: #EFEFEF;
     }
 
 
 
-    ul.CTAs a {
+    .wrapper ul.CTAs a {
         text-align: center;
         font-size: 0.9em !important;
         display: block;
