@@ -14,6 +14,7 @@
         <link href="public/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link href="public/lib/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" >
+
     <!--
         FullCalendar CSS/JS
         ===================
@@ -30,9 +31,9 @@
         <script src="public/template/fullcalendar/fullcalendar.min.js" ></script>
         <script src='public/template/fullcalendar/locale/fr.js'></script>
         <script type='text/javascript' src='public/template/fullcalendar/gcal.js'></script>
-
-        <!--  include 'public/css/membre_style.css'; -->
-
+        <!-- calandar form -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
     </head>
     <body>
         <nav>
@@ -66,7 +67,7 @@
                         </nav>
                     </div>
                 <!--  NAVBAR MOBIL -->
-                <div class="navbar-responsive">
+                <div class="navbar-responsive" >
                         <ul class="navbar-responsive__nav ">
                             <li class="navbar-responsive__link after-transform"><a href="/index.php">Home</a></li>
                             <li class="navbar-responsive__link after-transform">

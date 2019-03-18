@@ -3,98 +3,274 @@
     <nav class="nav-filtre">
         <div class="container">
 
+            <div class="row in-new">
+                <div class=" inputnew col-4">
+                    <label class="inserticon-fontico-new">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <input type="text" placeholder="Title..." name="" autofocus/>
+                </div>
+                <div class=" inputnew col-2">
+                    <label class="inserticon-fontico-new">
+                        <i class="fas fa-calendar-alt"></i>
+                    </label>
+                    <input id="datepicker-1" class="date" placeholder="Date max" autofocus/>
+                </div>
+                <div class=" inputnew col-2">
+                    <label class="inserticon-fontico-new">
+                        <i class="fas fa-calendar-alt"></i>
+                    </label>
+                    <input id="datepicker-2" class="date" placeholder="Date min" autofocus/>
+                </div>
+            </div>
 
-            <input type="text" placeholder="Saisissez le titre..." name="" class="inputtext "/>
+
+            <style>
 
 
+                /*************
+                ***************
+                ***********
+                 calandar form
+                 ***************
+                ***********
+                ***********/
+
+                .ui-datepicker {
+                    width: 280px;
+                    padding: 5px;
+                    background: #F6F6F6;
+                    border: solid 1px #DCDCDC;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                }
+
+                @media screen and (max-width: 580px) {
+                    .ui-datepicker {
+                        top: auto !important;
+                        right: 0 !important;
+                        bottom: 0 !important;
+                        left: 0 !important;
+                        width: 100%;
+                        border-radius: 0px;
+                    }
+                }
+
+                .ui-datepicker.active {
+                    opacity: 1;
+                }
+
+                .ui-datepicker-header {
+                    height: 40px;
+                    padding: 3px;
+                    margin-bottom: 10px;
+                }
+
+                .ui-datepicker-header .ui-datepicker-title {
+                    text-align: center;
+                    line-height: 34px;
+                }
+
+                .ui-datepicker-month,
+                .ui-datepicker-year {
+                    -webkit-appearance: none;
+                    border: 0;
+                    background: none;
+                    outline: none;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #3C4447;
+                    margin: 0 1px;
+                }
+
+                .ui-datepicker-prev, .ui-datepicker-next {
+                    position: relative;
+                    display: inline-block;
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                    text-indent: 9999px;
+                    overflow: hidden;
+                    border-radius: 3px 3px 3px 3px;
+                }
+
+                .ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+                    background: #3C4447;
+                }
+
+                .ui-datepicker-prev {
+                    float: left;
+                }
+
+                .ui-datepicker-prev:after {
+                    transform: rotate(45deg);
+                    margin-left: 15px;
+                }
+
+                .ui-datepicker-next {
+                    float: right;
+                }
+
+                .ui-datepicker-next:after {
+                    transform: rotate(-135deg);
+                    margin-left: 10px;
+                }
 
 
+                .ui-datepicker-prev:after,
+                .ui-datepicker-next:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    margin-top: -12px;
+                    width: 10px;
+                    height: 10px;
+                    border-left: 3px solid #787c86;
+                    border-bottom: 3px solid #787c86;
+                    pointer-events: none;
+                }
+
+                .ui-datepicker-calendar {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .ui-datepicker-calendar thead tr th {
+                    width: 40px;
+                    padding-bottom: 6px;
+                }
+
+                .ui-datepicker-calendar thead tr th span {
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    color: #3C4447;
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                .ui-datepicker-calendar tbody tr td {
+                    padding-right: 3px;
+                    padding-bottom: 3px;
+                }
+
+                .ui-datepicker-calendar tbody tr td:first-child {
+                    padding-left: 3px;
+                }
+
+                .ui-state-default {
+                    display: block;
+                    text-decoration: none;
+                    color: #3C4447;
+                    height: 35px;
+                    line-height: 35px;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    font-size: 15px;
+                }
+
+                .ui-state-default:hover {
+                    background: #444B54;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .ui-state-highlight {
+                    background: #d7d7d7;
+                    color: #444B54;
+                }
 
 
+                .ui-datepicker-unselectable .ui-state-default {
+                    color: rgba(255, 255, 255, 0.2);
+                    pointer-events: none;
+                }
 
-            <input type="date" class="" placeholder="date min..." name=""/>
+                /*************
+                ***************
+                ***************
+                form calandar end
+                ***************
+                ***********
+                ***********/
+
+            </style>
+
+            <style>
+
+            </style>
 
 
-            <div class="checkbox-new row">
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--red"/> <span> Red</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--pink"/> <span>Pink</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--purple"/> <span>Purple</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--deep-purple"/> <span>Deep-Purple</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--indigo"/> <span>Indigo</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--blue"/> <span>Blue</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--light-blue"/> <span>Light-Blue</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--cyan"/> <span>Cyan</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--teal"/> <span>Teal</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--green"/> <span>Green</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--light-green"/> <span>Light-Green</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--lime"/> <span>Lime</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--yellow"/> <span>Yellow</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--amber"/> <span>Amber</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--orange"/> <span>Orange</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--deep-orange"/> <span>Deep Orange</span>
-                </div>
-                <div class="col-2">
-                    <input type="checkbox" class="checkbox checkbox--blue-grey"/> <span>Blue-Grey</span>
-                </div>
+            <div class=" checkbox-new row">
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--red"/>
+                    <span> Red</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--deep-purple"/>
+                    <span>Deep-Purple</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--blue"/>
+                    <span>Blue</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--cyan"/>
+                    <span>Cyan</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--teal"/>
+                    <span>Teal</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--green"/>
+                    <span>Green</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--lime"/>
+                    <span>Lime</span>
+                </label>
+
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--orange"/>
+                    <span>Orange</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--deep-orange"/>
+                    <span>Deep Orange</span>
+                </label>
+                <label class="col-2 checkbox-l ">
+                    <input type="checkbox" class="checkbox checkbox--blue-grey"/>
+                    <span>Blue-Grey</span>
+                </label>
             </div>
         </div>
     </nav>
 </div>
-<br><br><br><br><br><br><br>
 
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-12 card" >
-            <div class="row no-gutters">
-                <div class="col-md-3">
-                    <img src="public/image/font/verdure-nav.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</div><br><br><br><br><br><br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <style>
+
+
+    /**********
+    input form
+    **********/
+
+    .in-new {
+        margin-bottom: 4%;
+    }
+
     .titre_new {
         color: #7F8181;
         margin-top: 11%;
@@ -103,8 +279,20 @@
         font-weight: 600;
     }
 
-    /* Code for input*/
-    .inputtext input {
+
+    .inserticon-fontico-new {
+        color: black;
+        float: left;
+        position: relative;
+        z-index: 2;
+        left: 0.5em;
+        top: 2.2em;
+        width: 0;
+    }
+
+    .inputnew input {
+        background-color: #F5F5F5;
+        padding-left: 38px;
         margin-top: 30px;
         font-weight: 300;
         border: 0;
@@ -114,13 +302,18 @@
         font-size: 20px;
     }
 
-    .inputtext input:focus {
+    .inputnew input:focus {
+        background-color: #F5F5F5;
+
         border-bottom: 1.5px solid #4169E1;
         outline: none;
         box-shadow: none;
     }
 
-    /* Code for nav filtre */
+
+    /*****
+     Code for nav filtre
+      ******/
     .nav-filtre {
         margin-left: 8%;
         margin-right: 8%;
@@ -132,21 +325,43 @@
     }
 
 
-    /* Code for checkboxes */
-    .checkbox-new span{
+    /*********
+     Code for checkboxes
+     *******/
+
+    .checkbox-l label {
+        display: block;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .checkbox-new label:hover {
+        background-color: #e6e6e6;
+    }
+
+    .checkbox-l label > input {
+        float: left;
+    }
+
+    .checkbox-l label > span {
+        display: block;
+    }
+
+    .checkbox-new label {
+        height: 25px;
+        cursor: pointer;
+
+    }
+
+    .checkbox-new span {
+        font-weight: 500;
         cursor: pointer;
         bottom: 15px;
     }
-    .checkbox-new ul {
-        margin: 16px -16px;
-    }
 
-    .checkbox-new ul li {
-        display: inline-block;
-        margin: 2px 20px;
-    }
 
     .checkbox {
+        top: 2px;
         position: relative;
         width: 1rem;
         height: 1rem;
@@ -182,28 +397,12 @@
         border-color: #f44336;
     }
 
-    .checkbox--pink:checked:before {
-        border-color: #e91e63;
-    }
-
-    .checkbox--purple:checked:before {
-        border-color: #9c27b0;
-    }
-
     .checkbox--deep-purple:checked:before {
         border-color: #673ab7;
     }
 
-    .checkbox--indigo:checked:before {
-        border-color: #3f51b5;
-    }
-
     .checkbox--blue:checked:before {
         border-color: #2196f3;
-    }
-
-    .checkbox--light-blue:checked:before {
-        border-color: #03a9f4;
     }
 
     .checkbox--cyan:checked:before {
@@ -218,21 +417,10 @@
         border-color: #4caf50;
     }
 
-    .checkbox--light-green:checked:before {
-        border-color: #8bc34a;
-    }
-
     .checkbox--lime:checked:before {
         border-color: #cddc39;
     }
-
-    .checkbox--yellow:checked:before {
-        border-color: #ffeb3b;
-    }
-
-    .checkbox--amber:checked:before {
-        border-color: #ffc107;
-    }
+    
 
     .checkbox--orange:checked:before {
         border-color: #ff9800;

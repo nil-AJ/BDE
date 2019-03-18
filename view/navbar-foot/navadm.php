@@ -7,20 +7,20 @@
         <ul class="list-unstyled components">
             <li class="active">
                 <?php
-                echo "<a  href=\"#homeSubmenu\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"dropdown-toggle\">" . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "</a>";
+                echo "<a  href=\"#homeSubmenu\" data-toggle=\"collapse\" aria-expanded=\"false\" class=\"active-a dropdown-toggle\"><i class=\"fas ico-adm fa-user\"></i> " . $_SESSION['user_info']['prename'] . " " . $_SESSION['user_info']['name'] . "</a>";
                 ?>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                     <li>
-                        <a href="?section=deconnexion">Déconection <i class="fas fa-sign-out-alt"></i></a>
+                        <a href="?section=deconnexion"><i class="fas ico-adm  fa-sign-out-alt"></i> Déconection </a>
                     </li>
                     <li>
-                        <a href="#"> Modifier sont profil</a>
+                        <a href="#"><i class="fas ico-adm fa-cog"></i> Profil</a>
                     </li>
                 </ul>
             </li>
 
             <li>
-                <a href="#"><i class="far fa-calendar-alt"></i> Calandrier</a>
+                <a href="#"><i class="far ico-adm  fa-calendar-alt"></i> Calandrier</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
@@ -50,6 +50,13 @@
 
 <style>
 
+
+
+    .ico-adm{
+        margin-right: 12px;
+        margin-left: 4px;r
+    }
+
     .wrapper a,
     .wrapper a:hover,
     .wrapper a:focus{
@@ -67,8 +74,8 @@
     #sidebar {
         min-width: 250px;
         max-width: 250px;
-        background: #F5F5F5;
-        color: black;
+        background: #2c2f33;
+        color: white;
         transition: all 0.3s;
     }
 
@@ -76,10 +83,7 @@
     #sidebar .sidebar-header{
         margin-top: 27%;
         padding: 20px;
-        background: #D3D3D3;
-    }
-    #sidebar ul.components{
-        border-bottom: 1px solid #DCDCDC;
+        background: #23272a;
     }
 
     #sidebar ul p{
@@ -93,15 +97,20 @@
         font-size: 1.1em;
         display: block;
     }
+    .active-a a:hover
+    {
+        color: white;
+        background: #1C1F21;
+    }
     #sidebar ul li a:hover {
-        color: black;
-        background: #DCDCDC;
+        color: white;
+        background: #23272a;
     }
 
     #sidebar ul li.active>a,
     a[aria-expanded="true"] {
-        color: black;
-        background: #DCDCDC;
+        color: white;
+        background: #23272a;
     }
     a[data-toggle="collapse"] {
         position: relative;
@@ -117,17 +126,7 @@
     .wrapper ul ul a {
         font-size: 0.9em !important;
         padding-left: 30px !important;
-        background: #EFEFEF;
-    }
-
-
-
-    .wrapper ul.CTAs a {
-        text-align: center;
-        font-size: 0.9em !important;
-        display: block;
-        border-radius: 5px;
-        margin-bottom: 5px;
+        background: #313538;
     }
 
 

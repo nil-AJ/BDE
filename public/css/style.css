@@ -245,177 +245,31 @@ CSS navbar.php
         font-size: 22px;
     }
 }
+/*calander home*/
+.calander-home{
+    background-color:white ;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.text-home{
+    position: relative;
+    font-size: 50px;
+    margin-right: 13%;
+    padding-top: 15%;
+    /* Rotation du div */
+    transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* Internet Explorer */
+    -moz-transform:rotate(-30deg); /* Firefox */
+    -webkit-transform:rotate(-30deg); /* Safari et Chrome */
+    -o-transform:rotate(-30deg); /* Opera */
+}
+/*calander end
+*/
+
 /*****************
 END NAVBAR.php
 ****************/
 
-/*****************
-*****************
-CSS footer.php
-
-****************
-****************/
-.logo-foot {
-    position: relative;
-    width: 130px;
-    height: 80px;
-}
-
-.foot-text-center{
-    padding-left: 35%
-}
-.foot-text-lr a{
-    color: white;
-    padding-left: 13%;
-}
-.foot-text-lr a:hover{
-    color: white;
-    padding-left: 13%;
-}
-.menu-foot{
-    margin-left: 50px;
-}
-.logo-text-foot{
-    top: 30px;
-    position: relative;
-    padding-left: 55%;
-}
-.footer-haut {
-    margin-top: 1px;
-    border-width: 1px 0px 1px 0px;
-    border-style: solid;
-    border-color:#DCDCDC;
-    background-color: #FBFCFA;
-    padding-bottom: 55px;
-}
-.footer-bas {
-    padding-top: 15px;
-    padding-bottom: 3px;
-    background-color: #333;
-    text-align: center;
-}
-
-.text-footer {
-    font-size: 15px;
-    color: white;
-}
-
-.social li {
-    display: block;
-    height: 4em;
-    line-height: 4em;
-    margin: -2.2em;
-    position: absolute;
-    -webkit-transition: -webkit-transform .7s;
-    -moz-transition: -moz-transform .7s;
-    -ms-transition: -ms-transform .7s;
-    -o-transition: -o-transform .7s;
-    transition: transform .7s;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    text-align: center;
-    width: 4em;
-
-}
-.social a {
-    color: #fffdf0;
-    display: block;
-    height: 4em;
-    line-height: 6em;
-    text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 4em;
-}
-.social li:hover {
-    -webkit-transform: scale(1.1, 1.1) rotate(45deg);
-    -moz-transform: scale(1.1, 1.1) rotate(45deg);
-    -ms-transform: scale(1.1, 1.1) rotate(45deg);
-    -o-transform: scale(1.1, 1.1) rotate(45deg);
-    transform: scale(1.1, 1.1) rotate(45deg);
-}
-.facebook {
-    background: #155b9d;
-    left: 0;
-    top: 0%;
-}
-.discord {
-    background: #7289da;
-    bottom: 0;
-    left: 25%;
-}
-.instagram {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    left: 50%;
-    top: 0%;
-}
-.mail {
-    background: #d54b3d;
-    bottom: 0;
-    left: 75%;
-}
-.phone{
-    background: #008000;
-    left: 100%;
-    top: 0%;
-}
-.icon {
-    padding-bottom:  95px;
-    padding-left: 21px;
-
-}
-.icon-phone {
-   padding-bottom:  130px;
-    padding-left: 40px;
-}
-.icon-mail {
-    padding-bottom:  100px;
-    padding-left: 21px;
-}
-@media (max-width: 1052px) {
-
-    .mobil-no {
-        display: none;
-    }
-    .social {
-        position: relative;
-        height: 3em;
-        width: 13.5em;
-        margin-top: 75px;
-        margin-left: 30px;
-    }
-    .footer-haut .titre {
-        margin-left: 10px;
-    }
-}
-@media (min-width: 1052px) {
-    .menu-foot{
-        margin-left: 50px;
-    }
-    .social {
-        position: relative;
-        height: 3em;
-        width: 13.5em;
-        margin-top: 75px;
-        margin-left: 250px;
-    }
-}
-/*****************
-END footer.php
-****************/
 
 
 /*****************
@@ -447,7 +301,11 @@ END index.php
 ****************/
 
 
-
+/*************
+***************
+Page Membre
+***********
+***********/
 /*Menbre*/
 .cercle-image{
     overflow:hidden;
@@ -496,10 +354,18 @@ figure.effect-X figcaption:hover{
 *::-webkit-scrollbar-thumb{
     background-color: #333;
 }
-/*Vmembre*/
+/*************
+***************
+Page Membre end
+***********
+***********/
 
 
-/*connexion*/
+/*************
+***************
+Page connexion
+***********
+***********/
 @-webkit-keyframes bounceLeft {
     0% {
         -webkit-transform: translate3d(100%, -50%, 0);
@@ -766,24 +632,8 @@ input[type="email"], input[type="password"] {
 }
 
 /*connexion end */
-/*calander home*/
-.calander-home{
-    background-color:white ;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.text-home{
-    position: relative;
-    font-size: 50px;
-    margin-right: 13%;
-    padding-top: 15%;
-    /* Rotation du div */
-    transform:rotate(-30deg);
-    -ms-transform:rotate(-30deg); /* Internet Explorer */
-    -moz-transform:rotate(-30deg); /* Firefox */
-    -webkit-transform:rotate(-30deg); /* Safari et Chrome */
-    -o-transform:rotate(-30deg); /* Opera */
-}
-/*calander end
-*/
-
+/*************
+***************
+Page connexion end
+***********
+***********/
