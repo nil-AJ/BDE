@@ -144,7 +144,6 @@
 <script src="public/Javascript/number.js"></script>
 <script src="public/javascript/calandar-form.js"></script>
 <!-- font-Awesome -->
-<script defer src="public/lib/fontawesome/svg-with-js/js/fontawesome-all.js"></script>
 <!-- jQuery Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>

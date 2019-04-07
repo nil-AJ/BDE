@@ -278,6 +278,10 @@ CSS index.php
 
 ****************
 ****************/
+.num-red:hover{
+    color: red;
+}
+
 .number{
     padding-top: 50px;
     padding-bottom: 100px;

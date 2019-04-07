@@ -11,7 +11,7 @@
         <link rel="shortcut icon" href="public/image/logo/BDE_CFA_INSTA/favicon/favicon.ico"
             type="public/image/logo/BDE_CFA_INSTA/favicon/favicon.ico">
         <!-- font-Awesome -->
-        <link href="public/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <!-- Bootstrap CSS -->
         <link href="public/lib/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" >
 

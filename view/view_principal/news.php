@@ -1,267 +1,280 @@
 <div class="container-fluid">
-    <h3 class="titre_new">Les derniers news du BDE</h3>
+    <h3 class="titre_new">Les dernieres news du BDE</h3>
     <nav class="nav-filtre">
-        <div class="container">
-
-            <div class="row in-new">
-                <div class=" inputnew col-4">
-                    <label class="inserticon-fontico-new">
-                        <i class="fas fa-search"></i>
-                    </label>
-                    <input type="text" placeholder="Title..." name="" autofocus/>
+        <div class="marg-new">
+            <div class="container">
+                <div class="row in-new">
+                    <div class=" inputnew col-md-3 col-sm-6 col-lg_6 col-xl-3">
+                        <label class="inserticon-fontico-new">
+                            <i class="fas fa-search"></i>
+                        </label>
+                        <input type="text" placeholder="Title..." name="" autofocus/>
+                    </div>
+                    <div class=" inputnew col-md-2 col-sm-6 col-lg_6 col-xl-3">
+                        <label class="inserticon-fontico-new">
+                            <i class="fas fa-calendar-alt"></i>
+                        </label>
+                        <input id="datepicker-1" class="date" placeholder="Date max" autofocus/>
+                    </div>
+                    <div class=" inputnew col-md-2 col-sm-6 col-lg_6 col-xl-3">
+                        <label class="inserticon-fontico-new">
+                            <i class="fas fa-calendar-alt"></i>
+                        </label>
+                        <input id="datepicker-2" class="date" placeholder="Date min" autofocus/>
+                    </div>
                 </div>
-                <div class=" inputnew col-2">
-                    <label class="inserticon-fontico-new">
-                        <i class="fas fa-calendar-alt"></i>
-                    </label>
-                    <input id="datepicker-1" class="date" placeholder="Date max" autofocus/>
-                </div>
-                <div class=" inputnew col-2">
-                    <label class="inserticon-fontico-new">
-                        <i class="fas fa-calendar-alt"></i>
-                    </label>
-                    <input id="datepicker-2" class="date" placeholder="Date min" autofocus/>
-                </div>
-            </div>
 
 
-            <style>
+                <style>
 
 
-                /*************
-                ***************
-                ***********
-                 calandar form
-                 ***************
-                ***********
-                ***********/
+                    /*************
+                    ***************
+                    ***********
+                     calandar form
+                     ***************
+                    ***********
+                    ***********/
 
-                .ui-datepicker {
-                    width: 280px;
-                    padding: 5px;
-                    background: #F6F6F6;
-                    border: solid 1px #DCDCDC;
-                    border-radius: 4px;
-                    box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
-                    opacity: 0;
-                }
-
-                @media screen and (max-width: 580px) {
                     .ui-datepicker {
-                        top: auto !important;
-                        right: 0 !important;
-                        bottom: 0 !important;
-                        left: 0 !important;
-                        width: 100%;
-                        border-radius: 0px;
+                        width: 280px;
+                        padding: 5px;
+                        background: #F6F6F6;
+                        border: solid 1px #DCDCDC;
+                        border-radius: 4px;
+                        box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
+                        opacity: 0;
                     }
-                }
 
-                .ui-datepicker.active {
-                    opacity: 1;
-                }
+                    @media screen and (max-width: 580px) {
+                        .ui-datepicker {
+                            top: auto !important;
+                            right: 0 !important;
+                            bottom: 0 !important;
+                            left: 0 !important;
+                            width: 100%;
+                            border-radius: 0px;
+                        }
+                    }
 
-                .ui-datepicker-header {
-                    height: 40px;
-                    padding: 3px;
-                    margin-bottom: 10px;
-                }
+                    .ui-datepicker.active {
+                        opacity: 1;
+                    }
 
-                .ui-datepicker-header .ui-datepicker-title {
-                    text-align: center;
-                    line-height: 34px;
-                }
+                    .ui-datepicker-header {
+                        height: 40px;
+                        padding: 3px;
+                        margin-bottom: 10px;
+                    }
 
-                .ui-datepicker-month,
-                .ui-datepicker-year {
-                    -webkit-appearance: none;
-                    border: 0;
-                    background: none;
-                    outline: none;
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: #3C4447;
-                    margin: 0 1px;
-                }
+                    .ui-datepicker-header .ui-datepicker-title {
+                        text-align: center;
+                        line-height: 34px;
+                    }
 
-                .ui-datepicker-prev, .ui-datepicker-next {
-                    position: relative;
-                    display: inline-block;
-                    width: 34px;
-                    height: 34px;
-                    cursor: pointer;
-                    text-indent: 9999px;
-                    overflow: hidden;
-                    border-radius: 3px 3px 3px 3px;
-                }
+                    .ui-datepicker-month,
+                    .ui-datepicker-year {
+                        -webkit-appearance: none;
+                        border: 0;
+                        background: none;
+                        outline: none;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #3C4447;
+                        margin: 0 1px;
+                    }
 
-                .ui-datepicker-prev:hover, .ui-datepicker-next:hover {
-                    background: #3C4447;
-                }
+                    .ui-datepicker-prev, .ui-datepicker-next {
+                        position: relative;
+                        display: inline-block;
+                        width: 34px;
+                        height: 34px;
+                        cursor: pointer;
+                        text-indent: 9999px;
+                        overflow: hidden;
+                        border-radius: 3px 3px 3px 3px;
+                    }
 
-                .ui-datepicker-prev {
-                    float: left;
-                }
+                    .ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+                        background: #3C4447;
+                    }
 
-                .ui-datepicker-prev:after {
-                    transform: rotate(45deg);
-                    margin-left: 15px;
-                }
+                    .ui-datepicker-prev {
+                        float: left;
+                    }
 
-                .ui-datepicker-next {
-                    float: right;
-                }
+                    .ui-datepicker-prev:after {
+                        transform: rotate(45deg);
+                        margin-left: 15px;
+                    }
 
-                .ui-datepicker-next:after {
-                    transform: rotate(-135deg);
-                    margin-left: 10px;
-                }
+                    .ui-datepicker-next {
+                        float: right;
+                    }
 
-
-                .ui-datepicker-prev:after,
-                .ui-datepicker-next:after {
-                    content: "";
-                    position: absolute;
-                    display: block;
-                    margin-top: -12px;
-                    width: 10px;
-                    height: 10px;
-                    border-left: 3px solid #787c86;
-                    border-bottom: 3px solid #787c86;
-                    pointer-events: none;
-                }
-
-                .ui-datepicker-calendar {
-                    width: 100%;
-                    text-align: center;
-                }
-
-                .ui-datepicker-calendar thead tr th {
-                    width: 40px;
-                    padding-bottom: 6px;
-                }
-
-                .ui-datepicker-calendar thead tr th span {
-                    display: block;
-                    width: 100%;
-                    padding: 0;
-                    color: #3C4447;
-                    font-size: 15px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-
-                .ui-datepicker-calendar tbody tr td {
-                    padding-right: 3px;
-                    padding-bottom: 3px;
-                }
-
-                .ui-datepicker-calendar tbody tr td:first-child {
-                    padding-left: 3px;
-                }
-
-                .ui-state-default {
-                    display: block;
-                    text-decoration: none;
-                    color: #3C4447;
-                    height: 35px;
-                    line-height: 35px;
-                    font-weight: 500;
-                    border-radius: 3px;
-                    font-size: 15px;
-                }
-
-                .ui-state-default:hover {
-                    background: #444B54;
-                    text-decoration: none;
-                    color: white;
-                }
-
-                .ui-state-highlight {
-                    background: #d7d7d7;
-                    color: #444B54;
-                }
+                    .ui-datepicker-next:after {
+                        transform: rotate(-135deg);
+                        margin-left: 10px;
+                    }
 
 
-                .ui-datepicker-unselectable .ui-state-default {
-                    color: rgba(255, 255, 255, 0.2);
-                    pointer-events: none;
-                }
+                    .ui-datepicker-prev:after,
+                    .ui-datepicker-next:after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        margin-top: -12px;
+                        width: 10px;
+                        height: 10px;
+                        border-left: 3px solid #787c86;
+                        border-bottom: 3px solid #787c86;
+                        pointer-events: none;
+                    }
 
-                /*************
-                ***************
-                ***************
-                form calandar end
-                ***************
-                ***********
-                ***********/
+                    .ui-datepicker-calendar {
+                        width: 100%;
+                        text-align: center;
+                    }
 
-            </style>
+                    .ui-datepicker-calendar thead tr th {
+                        width: 40px;
+                        padding-bottom: 6px;
+                    }
 
-            <style>
+                    .ui-datepicker-calendar thead tr th span {
+                        display: block;
+                        width: 100%;
+                        padding: 0;
+                        color: #3C4447;
+                        font-size: 15px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
 
-            </style>
+                    .ui-datepicker-calendar tbody tr td {
+                        padding-right: 3px;
+                        padding-bottom: 3px;
+                    }
+
+                    .ui-datepicker-calendar tbody tr td:first-child {
+                        padding-left: 3px;
+                    }
+
+                    .ui-state-default {
+                        display: block;
+                        text-decoration: none;
+                        color: #3C4447;
+                        height: 35px;
+                        line-height: 35px;
+                        font-weight: 500;
+                        border-radius: 3px;
+                        font-size: 15px;
+                    }
+
+                    .ui-state-default:hover {
+                        background: #444B54;
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    .ui-state-highlight {
+                        background: #d7d7d7;
+                        color: #444B54;
+                    }
 
 
-            <div class=" checkbox-new row">
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--red"/>
-                    <span> Red</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--deep-purple"/>
-                    <span>Deep-Purple</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--blue"/>
-                    <span>Blue</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--cyan"/>
-                    <span>Cyan</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--teal"/>
-                    <span>Teal</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--green"/>
-                    <span>Green</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--lime"/>
-                    <span>Lime</span>
-                </label>
+                    .ui-datepicker-unselectable .ui-state-default {
+                        color: rgba(255, 255, 255, 0.2);
+                        pointer-events: none;
+                    }
 
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--orange"/>
-                    <span>Orange</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--deep-orange"/>
-                    <span>Deep Orange</span>
-                </label>
-                <label class="col-2 checkbox-l ">
-                    <input type="checkbox" class="checkbox checkbox--blue-grey"/>
-                    <span>Blue-Grey</span>
-                </label>
+                    /*************
+                    ***************
+                    ***************
+                    form calandar end
+                    ***************
+                    ***********
+                    ***********/
+
+                </style>
+
+
+                <div class=" checkbox-new row">
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-red ">
+                        <input type="checkbox" class="checkbox checkbox--red"/>
+                        <span>Sport</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-deep-purple">
+                        <input type="checkbox" class="checkbox checkbox--deep-purple"/>
+                        <span>Soirées</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-blue ">
+                        <input type="checkbox" class="checkbox checkbox--blue"/>
+                        <span>Information</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-green">
+                        <input type="checkbox" class="checkbox checkbox--green"/>
+                        <span>Partenariats</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-orange">
+                        <input type="checkbox" class="checkbox checkbox--orange"/>
+                        <span>Voyage</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-deep-orange">
+                        <input type="checkbox" class="checkbox checkbox--deep-orange"/>
+                        <span>Loisir</span>
+                    </label>
+                    <label class="col-md-4  col-sm-6 col-lg_8 col-xl-2 checkbox-l checkbox-s-blue-grey">
+                        <input type="checkbox" class="checkbox checkbox--blue-grey"/>
+                        <span>Aide étudiant</span>
+                    </label>
+                </div>
             </div>
         </div>
     </nav>
 </div>
+<br><br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="card mb-3 shadow">
+            <div class="row no-gutters">
+                <div class="col-md-3 col-sm-3 col-lg-3">
+                    <img src="public/image/logo/BDE_CFA_INSTA/logo_BDE_CFA_INSTA-noir.png"
+                         style="height: 250px; width: 250px" class="card-img">
+                </div>
+                <div class="col-md-8 col-sm-3 col-lg-8">
+                    <div class="card-body">
+                        <h5 class="card-title">TEST</h5>
+                        <div class="">
+                            <span class="badge badge-secondary"><i class="fas fa-running"></i> Sport</span>
+                            <span class="badge badge-secondary"><i class="fas fa-music"></i> Soirées</span>
+                            <span class="badge badge-secondary"><i class="fas fa-info-circle"></i> Information</span>
+                            <span class="badge badge-secondary"><i class="fas fa-hands-helping"></i> Partenariats</span>
+                            <span class="badge badge-secondary"><i class="fas fa-plane"></i> Voyage</span>
+                            <span class="badge badge-secondary"><i class="fas fa-theater-masks"></i> Loisir</span>
+                            <span class="badge badge-secondary"><i
+                                        class="fas fa-graduation-cap"></i> Aide étudiant</span>
+                        </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
+</div>
 
+<br><br><br><br><br>
 <style>
 
+    .marg-new {
+        padding-bottom: 3%;
+    }
 
     /**********
     input form
@@ -274,7 +287,7 @@
     .titre_new {
         color: #7F8181;
         margin-top: 11%;
-        margin-left: 7%;
+        margin-left: 6%;
         margin-bottom: 1%;
         font-weight: 600;
     }
@@ -394,45 +407,69 @@
     }
 
     .checkbox--red:checked:before {
-        border-color: #f44336;
+        border-color: red;
     }
 
+    .checkbox-s-red span:hover {
+        color: red;
+    }
+
+    /**/
     .checkbox--deep-purple:checked:before {
         border-color: #673ab7;
     }
 
+    .checkbox-s-deep-purple span:hover {
+        color: #673ab7;
+    }
+
+    /**/
     .checkbox--blue:checked:before {
         border-color: #2196f3;
     }
 
-    .checkbox--cyan:checked:before {
-        border-color: #00bcd4;
+    .checkbox-s-blue span:hover {
+        color: #2196f3;
     }
 
-    .checkbox--teal:checked:before {
-        border-color: #009688;
-    }
-
+    /**/
     .checkbox--green:checked:before {
         border-color: #4caf50;
     }
 
-    .checkbox--lime:checked:before {
-        border-color: #cddc39;
+    .checkbox-s-green span:hover {
+        color: #4caf50;
     }
-    
 
+    /**/
     .checkbox--orange:checked:before {
         border-color: #ff9800;
     }
 
+    .checkbox-s-orange span:hover {
+        color: #ff9800;
+    }
+
+    /**/
     .checkbox--deep-orange:checked:before {
         border-color: #ff5722;
     }
 
+    .checkbox-s-deep-orange span:hover {
+        color: #ff5722;
+    }
+
+    /**/
+
     .checkbox--blue-grey:checked:before {
         border-color: #607d8b;
     }
+
+    .checkbox-s-blue-grey span:hover {
+        color: #607d8b;
+    }
+
+    /**/
 
 
 </style>
