@@ -76,7 +76,7 @@ include('controleur/controleur_administration.php');
                 break;
             
             default:
-                echo 'Erreur test: '.$e->getMessage(); //Erreur génériqu
+                echo 'Erreur test: '.$e->getMessage(); //Erreur générique
                 break;
         }
 
