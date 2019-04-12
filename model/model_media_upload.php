@@ -23,6 +23,43 @@
 
         $bdd = $GLOBALS['bdd'];
 
+
+          //Ajout de la categories
+          if(isset($_POST['category']))
+          {
+  
+              $req = $bdd->createBDD()->prepare('SELECT idCategory, categoryName FROM category WHERE categoryName = ?');
+              $req->execute(array(
+                  $_POST['category']
+              ));
+              $CategoryId = $req->fetch(PDO::FETCH_ASSOC)['idCategory'];
+              $req->closeCursor();
+  
+  
+            if($CategoryId == '' || $CategoryId == null)
+            {
+                //Insertion de l'album
+                $req = $bdd->createBDD()->prepare('INSERT INTO category(categoryName,categoryAdder,categoryDescription) VALUES(?,?,?)');
+                $req->execute(array(
+                    $_POST['category'],
+                    $_SESSION['user_info']['name'],
+                    ''
+                ));
+                $req->closeCursor(); 
+
+
+                $req = $bdd->createBDD()->prepare('SELECT idCategory, categoryName FROM category WHERE categoryName = ?');
+                $req->execute(array(
+                    $_POST['category']
+                ));
+                $CategoryId = $req->fetch(PDO::FETCH_ASSOC)['idCategory'];
+                $req->closeCursor();
+
+            }
+  
+              
+          }
+
         //Verification de l'existence de l'album
         $req = $bdd->createBDD()->prepare('SELECT idAlbum, title FROM album WHERE title = ?');
         $req->execute(array(
@@ -34,8 +71,9 @@
         if($albumId == '' || $albumId == null)
         {
             //Insertion de l'album
-            $req = $bdd->createBDD()->prepare('INSERT INTO album(title,uploader,creationDate) VALUES(?,?,Now()) ');
+            $req = $bdd->createBDD()->prepare('INSERT INTO album(FkCategory,title,uploader,creationDate) VALUES(?,?,?,Now()) ');
             $req->execute(array(
+                $CategoryId,
                 $_POST['evenement'],
                 $_SESSION['user_info']['name']
             ));
@@ -66,13 +104,6 @@
             ''
         ));
         $req->closeCursor();
-
-        //Ajout de la categories
-        if(isset($_POST['category']))
-        {
-            
-        }
-
 
     }else{
 
