@@ -243,8 +243,13 @@
         <div class="card mb-3 shadow">
             <div class="row no-gutters">
                 <div class="col-md-3 col-sm-3 col-lg-3">
+                    <div class='time'>
+                        <div class='date'>04</div>
+                        <div class='month'>APR</div>
+                    </div>
                     <img src="public/image/logo/BDE_CFA_INSTA/logo_BDE_CFA_INSTA-noir.png"
                          style="max-height: 250px; max-width: 250px" class="card-img">
+
                 </div>
                 <div class="col-md-8 col-sm-3 col-lg-8">
                     <div class="card-body">
@@ -277,6 +282,10 @@
         <div class="card mb-3 shadow">
             <div class="row no-gutters">
                 <div class="col-md-3 col-sm-3 col-lg-3">
+                    <div class='time'>
+                        <div class='date'>04</div>
+                        <div class='month'>APR</div>
+                    </div>
                     <img src="public/image/logo/BDE_CFA_INSTA/logo_BDE_CFA_INSTA-noir.png"
                          style="max-height: 250px; max-width: 250px" class="card-img">
                 </div>
@@ -312,6 +321,24 @@
 
 <br><br><br><br><br>
 <style>
+    .time {
+        position: absolute;
+        background: rgba(104,104, 104, 0.2);
+        width: 52px;
+        text-align: center;
+        padding: 0.5em 0;
+        color: #444;
+    }
+    .date {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .month {
+        font-size: 1rem;
+    }
+
+
+
 
 .badge-groupe{
     padding-bottom: 15px;

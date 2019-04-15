@@ -1,5 +1,6 @@
 <style>
     .calendar {
+        padding-bottom: 100px;
         padding-top: 100px;
     }
 
