@@ -374,8 +374,6 @@
     }
 
     .form-home {
-        padding-top: 6%;
-        padding-bottom: 6%;
         border-width: 1px 1px 1px 1px;
         border-style: solid;
         border-color: #DCDCDC;
@@ -428,13 +426,20 @@
         background-color: #6b7d8e;
     }
 
-
+.image_recrut img{
+    height: 100%;
+    width: 100%;
+}
 </style>
 
 
 <div class="form-home">
-    <div class="container">
-
+    <div class="">
+<div class="row">
+    <div class="col-md-4 col-sm-12 col-lg-4  image_recrut">
+<img src="public/image/font/afiche-recrutement-bde-cfa-insta.png">
+    </div>
+    <div style="margin: 3%; padding-top: 3%;" class="col-md-7 col-sm-12 col-lg-7 ">
         <h3 style="padding-bottom: 1%">Rejoindre le BDE ?</h3>
         <form>
             <div style="padding-bottom: 3%" class="row">
@@ -488,5 +493,9 @@
                 </div>
             </div>
         </form>
+    </div>
+
+</div>
+
     </div>
 </div>
