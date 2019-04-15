@@ -310,54 +310,11 @@ END index.php
 Page Membre
 ***********
 ***********/
-/*Menbre*/
-.cercle-image{
-    overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
-    width:90px;
-    height:90px;
-}
-/* Vmedia image buton redif*/
 
-figure.imga img{
 
-    opacity: 6;
-    margin-right: 16px;
-    height: 340px
-}
-figure.effect-X figcaption{
-    position: relative;
-}
-figure.effect-X figcaption::before, figure.effect-X figcaption::after {
-    bottom: 11em;
-    left: 48%;
-    position: absolute;
-    width: 24em;
-    height: 2px;
-    background: #fff;
-    content: '';
-}
-figure.effect-X figcaption::before {
-    -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
-    transform: translate3d(-50%, -50%, 0) rotate(-45deg)
-}
-figure.effect-X figcaption::after {
-    -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-    transform: translate3d(-50%, -50%, 0) rotate(45deg)
-}
-figure.effect-X figcaption:hover{
 
-}
-/*scrollbar*/
-*::-webkit-scrollbar {
-    background-color: transparent;
-    width: 12px;
-}
-*::-webkit-scrollbar-thumb{
-    background-color: #333;
-}
+
+
 /*************
 ***************
 Page Membre end
