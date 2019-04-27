@@ -1,7 +1,5 @@
 <?php
 
-
-     
     function home()
     {
         $GLOBALS['u']->add("view/view_principal/home.php",1);
@@ -18,10 +16,6 @@
         $GLOBALS['u']->add("view/media/media.php",1);
     }
 
-    function news()
-    {
-        $GLOBALS['u']->add("view/view_principal/news.php",1);
-    }
 
     function pageUnknown()
     {
