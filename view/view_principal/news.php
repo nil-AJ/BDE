@@ -239,17 +239,15 @@
 <div class="container">
     <div class="row">
         <?php
-        foreach ($affiche as $value)
+        $result=aff_news();
+        foreach($result as $value)
         {
-
             ?>
-
         <div class="card mb-3 shadow">
             <div class="row no-gutters">
                 <div class="col-md-3 col-sm-3 col-lg-3">
                     <div class='time'>
-                        <div class='date'><?php echo $value['dateStart']?></div>
-                        <div class='month'>APR</div>
+                        <div class='date'><strong><?php echo date('j M', strtotime($value['dateStart']))?></strong></div>
                     </div>
                     <img src="public/image/logo/BDE_CFA_INSTA/logo_BDE_CFA_INSTA-noir.png"
                          style="max-height: 250px; max-width: 250px" class="card-img">
@@ -267,15 +265,14 @@
                             <span  style="background-color: #ff5722" class="badge badge-secondary"><i class="fas fa-theater-masks"></i> Loisir</span>
                             <span  style="background-color: #607d8b" class="badge badge-secondary"><i class="fas fa-graduation-cap"></i> Aide étudiant</span>
                         </div>
-
-
                         <p class="card-text"><?php echo $value['content']?></p>
                     </div>
                 </div>
             </div>
         </div>
             <?php
-}
+        }
+
 ?>
 
 
@@ -287,18 +284,16 @@
     .time {
         position: absolute;
         background: rgba(104,104, 104, 0.2);
-        width: 52px;
+        width: 54px;
         text-align: center;
         padding: 0.5em 0;
         color: #444;
     }
     .date {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: bolder;
     }
-    .month {
-        font-size: 1rem;
-    }
+
 
 
 

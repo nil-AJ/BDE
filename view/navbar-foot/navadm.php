@@ -23,22 +23,51 @@
                 <a href="#"><i class="far ico-adm  fa-calendar-alt"></i> Calandrier</a>
             </li>
             <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Page</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
+                <a href="#"><i class="fas fa-gavel"></i> Réglement</a>
+            </li>
+            <li>
+                <a href="#pageA" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file-alt"></i> Formulaire Ajou</a>
+                <ul class="collapse list-unstyled" id="pageA">
                     <li>
-                        <a href="#">page1</a>
+                        <a href="#">Inscription Ajou</a>
                     </li>
                     <li>
-                        <a href="#">page2</a>
+                        <a href="#">News Ajou</a>
+                    </li>
+                    <li>
+                        <a href="#">Media Ajou</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#pageS" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file-excel"></i> Formulaire Sup</a>
+                <ul class="collapse list-unstyled" id="pageS">
+                    <li>
+                        <a href="#">Inscription Sup</a>
+                    </li>
+                    <li>
+                        <a href="#">News Sup</a>
+                    </li>
+                    <li>
+                        <a href="#">Media Sup</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="#pageT" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-file-excel"></i> Tuto</a>
+                <ul class="collapse list-unstyled" id="pageT">
+                    <li>
+                        <a href="#">Discord</a>
+                    </li>
+                    <li>
+                        <a href="#">Trello</a>
+                    </li>
+                    <li>
+                        <a href="#">Mailchimp</a>
+                    </li>
+                </ul>
             </li>
+
         </ul>
 
 
@@ -49,8 +78,26 @@
 
 
 <style>
-
-
+    /*****
+     srcooll bar*
+     ******/
+    #sidebar::-webkit-scrollbar {
+        width: 8px;
+    }
+    /* Track */
+    #sidebar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    #sidebar::-webkit-scrollbar-thumb {
+        background: #787c86;
+    }
+    #sidebar {
+        overflow-y: scroll;
+    }
+    /******
+     end srcooll bar*
+    *****/
 
     .ico-adm{
         margin-right: 12px;

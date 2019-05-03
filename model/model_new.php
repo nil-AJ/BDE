@@ -1,16 +1,18 @@
 <?php
-    function aff_news()
-    {
+
+
+function aff_news()
+{
+
         $bdd = $GLOBALS['bdd'];
-        $req = $bdd->createBDD()->query('SELECT * FROM news');
-        $affiche = $req->fetchAll();
-        return $affiche;
-
-
-    }
+        $req= $bdd->createBDD()->query('SELECT * FROM news');
+        $result = $req->fetchAll();
+        return $result;
 
 
 
+
+}
 
 
 //public function rechercher($tab, $mot_cle)
