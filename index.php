@@ -19,9 +19,6 @@ include('global.php');
                     membre();
                     break;
 
-                case 'logo':
-                    logo();
-                    break;
 
                 case 'partenariat':
                     partenariat();
@@ -58,7 +55,12 @@ include('global.php');
                 case 'upload':
                     uploadMember();
                     break;
-                
+
+                case 'administration_ajou_news':
+                    uploadMember();
+                    break;
+
+
                 default:
                     throw new Exception(404);
                     break;

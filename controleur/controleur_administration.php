@@ -1,6 +1,6 @@
 <?php
 
-
+//
 function uploadMember()
 {
     if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
@@ -24,7 +24,7 @@ function uploadMember()
     }
 
 
-
+//
     function DEconnexion($mode)
     {
         if($mode)//Connexion
@@ -54,7 +54,7 @@ function uploadMember()
         }
         
     }
-
+//
     function inscription()
     {
         if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
@@ -70,7 +70,7 @@ function uploadMember()
             throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
         }
     }
-
+//
 function administration_index()
 {
     if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
@@ -83,3 +83,40 @@ function administration_index()
 }
 }
 
+
+//
+function administration_ajou_news()
+{
+    if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
+    {
+
+        $GLOBALS['u']->add("view/view_administration/form_news",1);
+    }else{
+
+        throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
+    }
+}
+//
+function administration_calandaradm()
+{
+    if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
+    {
+
+        $GLOBALS['u']->add("view/view_administration/calandaradm.php",1);
+    }else{
+
+        throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
+    }
+}
+//
+function administration_sup_membre()
+{
+    if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
+    {
+
+        $GLOBALS['u']->add("view/view_administration/sup_membre.php",1);
+    }else{
+
+        throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés
+    }
+}
