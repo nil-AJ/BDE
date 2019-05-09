@@ -57,7 +57,7 @@ include('global.php');
                     break;
 
                 case 'administration_ajou_news':
-                    uploadMember();
+                    administration_ajou_news();
                     break;
 
 

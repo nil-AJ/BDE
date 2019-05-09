@@ -90,7 +90,7 @@ function administration_ajou_news()
     if(isset($_SESSION['user_info'])) //Toutes les fonction réservées au membres devront etre dans ces deux condition
     {
 
-        $GLOBALS['u']->add("view/view_administration/form_news",1);
+        $GLOBALS['u']->add("view/view_administration/form_news.php",1);
     }else{
 
         throw new Exception(404); // On redirige l'utilisateur vers une page 404 si il essaye d'accéder a une page auquel il n'as pas accés

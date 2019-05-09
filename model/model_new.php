@@ -9,9 +9,6 @@ function aff_news()
         $result = $req->fetchAll();
         return $result;
 
-
-
-
 }
 
 

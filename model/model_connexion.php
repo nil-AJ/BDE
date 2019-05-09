@@ -29,3 +29,4 @@
 
     $req->closeCursor();
 
+?>

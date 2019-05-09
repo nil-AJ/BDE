@@ -32,7 +32,7 @@
                         <a href="#">Inscription Ajou</a>
                     </li>
                     <li>
-                        <a href="#">News Ajou</a>
+                        <a href="?section=administration_ajou_news">News Ajou</a>
                     </li>
                     <li>
                         <a href="#">Media Ajou</a>
